@@ -1,0 +1,159 @@
+Assignments on String Class:
+
+1) Write an application to determine the length of the String str = “Hello World”. (Hint: Use
+String method)
+Code:
+
+
+public class StringAssignment {
+
+	public static void main(String[] args) {
+		String str= new String("Hello World");
+		
+		int len= str.length();
+		System.out.println("The length of the String: "+len);
+
+	}
+
+}
+
+
+2) Write an application to join the two Strings “Hello, ” & “How are you?” (Hint: Use String
+method)
+Code:
+public class StringAssignment {
+
+	public static void main(String[] args) {
+		
+		String str1= new String("Hello ");
+		String str2= new String("How are you");
+		
+		System.out.println("The strings after combining: "+str1+str2);
+
+	}
+
+}
+
+
+3) Given a String “Java String pool refers to collection of Strings which are stored in heap
+memory”, perform the following operations (Hint: all operation can be performed using
+String methods)
+a. Print the string to console in lowercase
+b. Print the string to console in uppercase
+c. Replace all ‘a’ character in the string with $ sign
+d. Check if the original String contains the word “collection”
+e. Check if the following String “java string pool refers to collection of strings which
+are stored in heap memory” matches the original
+f. If the string does not match check if there is another method which can be used to
+check if the strings are equal
+Code:
+
+
+public class StringAssignment {
+
+	public static void main(String[] args) {
+		
+		
+		String str1 = new String("Java String pool refers to collection of Strings which are stored in heap memory");
+        // printing the string in lowercase
+       
+		System.out.println("lower case is: "+str1.toLowerCase());
+      
+        //printing the string in upper case
+
+        System.out.println("Upper case is: "+str1.toUpperCase());
+        
+        
+        String str=str1.replace('a','$');
+        
+        System.out.println(str);
+        
+        if(str1.contains("collection")) {
+       	 
+        System.out.println("collection is available");
+        }
+         else{
+       	 System.out.println("not avaiable");
+        
+        }
+        
+        String str2 = new String("java string pool refers to collection of strings which are stored in heap memory");
+
+         if(str2.equals(str1)) {
+       	  System.out.println("they r equal: ");
+         }
+         else {
+       	  System.out.println("not equal");
+         }
+         
+         
+         if(str2.equalsIgnoreCase(str1)) {
+       	  System.out.println("matches with the original string");
+       	  
+         }
+         else {
+       	  System.out.println("they r not equal");
+         }
+
+	}
+
+}
+
+StringBuffer 
+
+Q4.
+public class Assignment3Q4 {
+
+	public static void main(String[] args) {
+
+		StringBuffer s=new StringBuffer("StringBuffer");
+		s.append(" is a peer class of String");
+		System.out.println(s);
+		s.append(" that provides much of");
+		System.out.println(s);
+		s.append(" the functionality of strings");
+		System.out.println(s);
+		
+		
+
+	}
+
+}
+
+Q5.
+public class Assignment3Q51 {
+
+	public static void main(String[] args) {
+		
+		StringBuffer s=new StringBuffer("It is used to _ at the specified index position");
+		s.insert(14, "insert text");
+		System.out.println(s);
+
+	}
+
+}
+
+Q6.
+
+ public class Assignment3Q6 {
+
+	public static void main(String[] args) {
+		
+		StringBuffer s=new StringBuffer("“This method returns the reversed object on which it was called");
+		System.out.println(s.reverse());
+	}
+
+}
+
+Q7.
+
+public class Assignment3Q7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StringBuilder s=new StringBuilder("“This method returns the reversed object on which it was called");
+		System.out.println(s.reverse());
+
+	}
+
+}
