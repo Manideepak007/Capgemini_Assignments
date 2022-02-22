@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+
+	<bean id = "Customer1" class="Question5.Customer">
+		<property name="customerId" value = "123" />
+		<property name="customerName" value = "Nishant" />
+		<property name="customerContact" value = "9948652610" />
+	</bean>
+	
+	<bean id = "Customeradd" class="Question5.Address" >
+		<property name="street" value = "chipura"/>
+		<property name="city" value = "visakhapatnam"/>
+		<property name="state" value = "Andhara Pradesh"/>
+		<property name="zip" value = "530001"/>
+		<property name="country" value = "India"/>
+	</bean>
+	
+	<bean id = "Customeradd1" class="Question5.Address" >
+		<property name="street" value = "--------chipuras"/>
+		<property name="city" value = "hydrabad"/>
+		<property name="state" value = "Andhara Pradesh"/>
+		<property name="zip" value = "5300012"/>
+		<property name="country" value = "India"/>
+	</bean>
+	
+	  <context:annotation-config/>
+	
+<!-- 	<bean id= "Customer2" class = "Question5.Customer">
+		<constructor-arg name="customerId" value = "1234"/>
+		<constructor-arg name="customerName" value = "Nishant"/>
+		<constructor-arg name="customerContact" value = "9948652610"/>
+		<constructor-arg name="customerAddress" ref="Customeradd1"/>
+	</bean>
+	
+	<bean id = "Customeradd1" class="Question5.Address" >
+		<constructor-arg name="street" value = "chipura"/>
+		<constructor-arg name="city" value = "visakhapatnam"/>
+		<constructor-arg name="state" value = "Andhara Pradesh"/>
+		<constructor-arg name="zip" value = "530001"/>
+		<constructor-arg name="country" value = "India"/>
+	</bean> -->
+</beans>
