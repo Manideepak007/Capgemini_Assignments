@@ -8,12 +8,12 @@
            http://www.springframework.org/schema/context/spring-context.xsd">
            
            <bean id ="details1" class = "Question9.BeanLIfeCycle">
-           <property name="Name" value = "Jai"/>
+           <property name="Name" value = "Mani"/>
            <property name="Id" value = "001"/>
            </bean>
            
            <bean id ="details2" class = "Question9.BeanLIfeCycle">
-           <property name="Name" value = "Nishant"/>
+           <property name="Name" value = "Deepak"/>
            <property name="Id" value = "002"/>
            </bean>
            
