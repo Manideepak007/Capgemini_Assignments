@@ -12,14 +12,14 @@
 
 			<bean id="bankaccount1" class="Question3.BankAccount">
 					<property name="accountId" value="1"/>
-					<property name="accountHolderName" value="Manasa"/>
+					<property name="accountHolderName" value="Manideepak"/>
 					<property name="accountType" value="Savings"/>
 					<property name="accountBalance" value="10000"/>
 			</bean>
 			
 			<bean id="bankaccount2" class="Question3.BankAccount">
 					<property name="accountId" value="2"/>
-					<property name="accountHolderName" value="Subhash"/>
+					<property name="accountHolderName" value="Deepak"/>
 					<property name="accountType" value="Current"/>
 					<property name="accountBalance" value="100000"/>
 			</bean>
